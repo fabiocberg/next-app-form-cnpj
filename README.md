@@ -1,34 +1,85 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# next-app-form-cnpj
 
-## Getting Started
+## Descrição
 
-First, run the development server:
+Este projeto é uma aplicação Next.js focada em consultar e validar CNPJ (Cadastro Nacional da Pessoa Jurídica), oferecendo um formulário moderno, rápido e fácil de usar. Ideal para projetos que necessitam de validação de dados empresariais ou integração com APIs públicas de informações cadastrais.
 
-```bash
-npm run dev
-# or
-yarn dev
+## Tecnologias Utilizadas
+
+- **Framework:** [Next.js](https://nextjs.org/) (React)
+- **Linguagem:** TypeScript ou JavaScript moderno (ES6+)
+- **Estilização:** CSS Modules, Styled Components ou Tailwind CSS (personalize conforme o projeto)
+- **Validação de Formulário:** Yup, Zod, React Hook Form (opcional)
+- **API de Consulta:** Integração com API pública de CNPJ (ex: ReceitaWS, BrasilAPI ou similar)
+- **Testes:** Jest, React Testing Library
+- **Deploy:** Vercel, Netlify, ou hospedagem própria
+
+## Estrutura de Pastas Sugerida
+
+```
+src/
+├── components/     # Componentes reutilizáveis (FormCNPJ, ResultCard, etc)
+├── pages/          # Páginas da aplicação (index, api, etc)
+├── services/       # Serviços de API e utilitários de consulta
+├── styles/         # Estilos globais ou customizados
+├── utils/          # Funções auxiliares (ex: validação de CNPJ)
+└── tests/          # Testes unitários e de integração
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Como rodar localmente
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+1. **Pré-requisitos**
+   - Node.js v18+ instalado
+   - npm ou yarn
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+2. **Instalação**
+   ```bash
+   npm install
+   # ou
+   yarn install
+   ```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+3. **Execução em desenvolvimento**
+   ```bash
+   npm run dev
+   # ou
+   yarn dev
+   ```
+   Acesse [http://localhost:3000](http://localhost:3000) no navegador.
 
-## Learn More
+4. **Testes**
+   ```bash
+   npm test
+   # ou
+   yarn test
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+## Funcionalidades
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Formulário para consulta e validação de CNPJ
+- Integração com API pública para retorno de dados cadastrais
+- Exibição de dados da empresa consultada
+- Validação e feedback em tempo real no formulário
+- Layout responsivo e acessível
+- Possibilidade de expandir para múltiplos tipos de consulta (CPF, IE, etc)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Deploy
 
-## Deploy on Vercel
+- Recomenda-se o deploy na [Vercel](https://vercel.com/) (plataforma oficial do Next.js), mas pode ser hospedado em qualquer serviço compatível.
+- Consulte a [documentação de deploy do Next.js](https://nextjs.org/docs/deployment) para detalhes.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contribuição
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Faça um fork deste repositório
+2. Crie uma branch para sua feature (`git checkout -b minha-feature`)
+3. Commit suas alterações (`git commit -am 'Adiciona nova feature'`)
+4. Faça push para a branch (`git push origin minha-feature`)
+5. Abra um Pull Request
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT.
+
+---
+
+> Dúvidas, sugestões ou encontrou algum problema? Abra uma Issue ou contribua enviando um Pull Request!
